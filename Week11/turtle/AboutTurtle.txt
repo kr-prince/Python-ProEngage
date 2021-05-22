@@ -1,0 +1,7 @@
+
+- Turtle is a python package developed on similar lines to LOGO programming language.
+- Enables users to create graphics and shapes on a virtual canvas
+- Fun and interactive way to introduce kids to programming
+
+Refer : https://realpython.com/beginners-guide-python-turtle/
+		https://docs.python.org/3/library/turtle.html
