@@ -250,10 +250,5 @@ divButton = Button(controlFrame, text="/", command=lambda : addOperator('/'))
 divButton.config(image=divIcon, bg='light blue', highlightbackground='steel blue')
 divButton.grid(row=1,column=1, ipadx=10, padx=10, pady=10)
 
-
-s = Style()
-s.theme_use('clam')
-s.configure("red.Horizontal.TProgressbar", foreground='red', background='red')
-# ttk.Progressbar(frame, style="red.Horizontal.TProgressbar", orient="horizontal", length=600, mode="determinate", maximum=4, value=1).grid(row=1, column=1)
 # Infinite loop
 root.mainloop()
