@@ -117,8 +117,10 @@ def display_hall_of_fame():
 	hof_window.title("Hall Of Fame")
 	hof_window.resizable(False, True)
 	hof_window.focus_force()
-	hof_window.geometry("+%d+%d" % ((root.winfo_screenwidth() / 5),
-	                                     (root.winfo_screenheight() / 3)))
+	hofIcon = PhotoImage(file='./icons/trophy.png')
+	hofIcon = hofIcon.subsample(2, 2)
+	hof_window.iconphoto(True, hofIcon)
+	hof_window.geometry("+%d+%d" % ((root.winfo_screenwidth() / 5),(root.winfo_screenheight() / 3)))
 
 	# Fetch all records
 	scores = get_hof_scores()
@@ -154,9 +156,10 @@ root = Tk()
 root.title("Math Game")
 root.resizable(False, False)
 root.focus_force()
-# firstGui.protocol('WM_DELETE_WINDOW', closeMainGui)
-root.geometry("600x350+%d+%d" % ((root.winfo_screenwidth() / 4),
-                                     (root.winfo_screenheight() / 4)))
+rootIcon = PhotoImage(file = './icons/logo.png')
+rootIcon = rootIcon.subsample(4, 4)
+root.iconphoto(False, rootIcon)
+root.geometry("600x350+%d+%d" % ((root.winfo_screenwidth() / 4),(root.winfo_screenheight() / 4)))
 
 
 # Creating Menubar
